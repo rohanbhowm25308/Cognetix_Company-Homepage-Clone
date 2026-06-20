@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  /* width: 100%; */
+}
+
+/* Background image box */
+.background-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(netflixbg.jpg);
+  z-index: 0;
+}
+
+/* Dark overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.box {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+img {
+  height: 2.8rem;
+}
+.nav {
+  padding: 1rem 0;
+  /* background-color: aqua; */
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.right-section {
+  margin-top: 0.6rem;
+  display: flex;
+
+  text-align: center;
+}
+.right-section a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(235, 20, 20);
+}
+.language {
+  border: 0.05rem solid rgb(213, 212, 212);
+  padding: 0.4rem 2rem;
+  font-size: large;
+  background-color: rgb(29, 29, 29);
+  border-radius: 0.3rem;
+  color: white;
+}
+.log {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  background-color: rgb(235, 20, 20);
+}
+.log:hover {
+  opacity: 0.88;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* background-color: bisque; */
+  /* color: white; */
+}
+.heading h1 {
+  max-width: 560px;
+  margin-top: 8rem;
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+.heading p {
+  font-weight: 600;
+  margin: 2rem;
+
+  color: white;
+  font-size: 1.3rem;
+}
+.side h3 {
+  font-size: medium;
+  margin-bottom: 0.9rem;
+  color: white;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* background-color: rgb(183, 28, 28); */
+}
+.email input {
+  background-color: transparent;
+  opacity: 0.7;
+  padding: 0.9rem 6rem 0.9rem 0rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: black;
+  border: 0.05rem solid rgb(213, 212, 212);
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(235, 20, 20);
+}
+.btn {
+  background-color: rgb(235, 20, 20);
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.btn:hover {
+  opacity: 0.88;
+}
+.main {
+  /* background-color: black; */
+}
+.trending-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 180px;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h2 {
+text-align: center;
+  padding: 3rem 0;
+  background-color: black;
+  color: white;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+background-color: black;
+  color: white;
+}
+
+.feature-box {
+  flex: 1;
+  min-width: 220px;
+  min-height: 240px;
+  background-color: rgb(39, 4, 39);
+  padding: 20px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+}
+
+.feature-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.feature-box p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+section.faq {
+  max-width: 800px;
+
+  padding: 0 244px;
+  background-color: black;
+}
+
+section.faq > h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  background: rgb(95, 95, 95);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.question:hover {
+  opacity: 0.6;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.head {
+  margin-top: 5rem;
+}
+.head h3 {
+  color: white;
+}
+
+.last-email {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+footer input {
+  padding: 0.9rem 10rem 0.9rem 0rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  background-color: black;
+  border: 0.05rem solid rgb(213, 212, 212);
+}
+.questions {
+  margin-top: 6rem;
+  margin-left: 2.5rem;
+  color: gray;
+}
+.questions a {
+  color: gray;
+}
+footer {
+  padding: 0 6rem;
+  background-color: black;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+  /* background-color: #111;  */
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 2;
+}
+
+.footer a {
+  color: gray;
+  font-size: 14px;
+}
+.about {
+  margin-top: 3rem;
+  color: gray;
+}
+.extra {
+  display: flex;
+  /* justify-content: last baseline; */
+  text-align: center;
+}
+
+.bot {
+  margin-top: 3rem;
+  color: gray;
+}
+.more {
+  color: gray;
+  margin-top: 45.4px;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+  .heading p {
+    font-size: 1rem;
+  }
+
+  .side h3 {
+    font-size: 0.9rem;
+  }
+  .email {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .email input {
+    width: 80%;
+    max-width: 230px;
+  }
+
+  .last-email {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  footer input {
+    width: 90%;
+    max-width: 200px;
+  }
+}
